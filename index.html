@@ -5,75 +5,77 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-  <header>
-    <h1>Virsraksts</h1>
-  </header>
-
-  <main>
-    <section id="saturs">
-      <p>Rindkopa1</p>
-      <p class="cits">Rindkopa2</p>
-      <i>Slīpraksts</i>
-      <b>Treknraksts</b>
-      <hr>
-      <marguee>Sveicieni!</marguee>
-      <div>
-        <img id="bilde" src="media/ELSLV logo.png" alt="manabilde" width="20%">
-      </div>
-      <br><br>
-      <nav>
+    <header>
+      <nav class="topnav">
+        <a href="index.html" class="active">Sākums</a>
         <a href="Par mums.html">Par mums</a>
-        <br>
         <a href="Kontakti.html">Kontakti</a>
       </nav>
-      <br>
-      <ol type="A" start="2">
-        <li>Pirmais elements</li>
-        <li>Trešais elements</li>
-        <li>Trešais elements</li>
-      </ol>
-      <ul type="circle">
-        <li>Pirmais elements</li>
-        <li>Trešais elements</li>
-        <li>Trešais elements</li>
-      </ul>
-    </section>
-    <section>
-      <table border="1">
-        <tr>
-          <th>Pirmais</th>
-          <th>Otrais</th>
-          <th>Trešais</th>
-        </tr>
-        <tr>
-          <td colspan="3">1.rinda 1.kolonna</td>
-        </tr>
-        <tr>
-          <td>2.rinda 1.kolonna</td>
-          <td>2.rinda 2.kolonna</td>
-          <td rowspan="2">2.rinda 3.kolonna apv</td>
-        </tr>
-        <tr>
-          <td>3.rinda 1.kolonna</td>
-          <td>3.rinda 2.kolonna</td>
-        </tr>
-      </table>
-    </section>
-  <section id="canva">
-    <canvas id="zimejums" width= "500" height="400"></canvas><br>
-    <button onclick="taisnsturis()">Parādīt taisnstūri</button>
-    <button onclick="aplis()">Parādīt apli</button>
-    <button onclick="teksts()">Parādīt tekstu</button>
-    <button onclick="linija()">Parādīt līniju</button>
-    <button onclick="bilde()">Parādīt bildi</button><br>
-  </section>
-  </main>
-  <footer>&copy; Mana firma 2024</footer>
-  <script src="script.js"></script>
+    </header>
+    <aside class="sidebar">
+      <a href="#saturs">Saturs</a>
+      <a href="#tabula">Tabula</a>
+    </aside>
+    <main>
+      <section id="saturs">
+        <p>Rindkopa1</p>
+        <p id="cits">Rindkopa2</p>
+        <i>Slīpraksts</i>
+        <b>Treknraksts</b>
+        <hr>
+        <marquee>Sveicieni!</marquee>
+        <div>
+          <img id="bilde" src="media/ELSLV logo.png" alt="manabilde" width="20%">
+        </div>
+        <br><br>
+        <br>
+        <ol type="A" start="2">
+          <li>Pirmais elements</li>
+          <li>Trešais elements</li>
+          <li>Trešais elements</li>
+        </ol>
+        <ul type="circle">
+          <li>Pirmais elements</li>
+          <li>Trešais elements</li>
+          <li>Trešais elements</li>
+        </ul>
+       <section>
+        <table border="1">
+          <tr>
+            <th>Pirmais</th>
+            <th>Otrais</th>
+            <th>Trešais</th>
+          </tr>
+          <tr>
+            <td colspan="3">1.rinda 1.kolonna</td>
+          </tr>
+          <tr>
+            <td>2.rinda 1.kolonna</td>
+            <td>2.rinda 2.kolonna</td>
+            <td rowspan="2">2.rinda 3.kolonna apv</td>
+          </tr>
+          <tr>
+            <td>3.rinda 1.kolonna</td>
+            <td>3.rinda 2.kolonna</td>
+          </tr>
+        </table>
+       </section>
+      <section id="canva">
+        <canvas id="zimejums" width= "500" height="400"></canvas><br>
+        <button onclick="taisnsturis()">Parādīt taisnstūri</button>
+        <button onclick="aplis()">Parādīt apli</button>
+        <button onclick="teksts()">Parādīt tekstu</button>
+        <button onclick="linija()">Parādīt līniju</button>
+        <button onclick="bilde()">Parādīt bildi</button><br>
+      </section>
+      
+    </main>
+    <footer>&copy; Mana firma 2024</footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
