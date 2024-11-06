@@ -90,8 +90,49 @@ function aprekins() {
     console.log("Rezultāts ir: " + sum);
     document.getElementById("rezultats").innerHTML = "Tevi sauc: " + vards + ". <br>Rezultāts ir: " + sum;
     alert("Rezultāts ir: " + sum);
+  let age = parseFloat(document.getElementById("b").value);
+console.log(age);
+if (age < 18) {
+   console.log("Nepilngadīgs");
+}  else if (age>=18 && age < 65) {
+   console.log("Pilngadīgs");
+}  else {
+   console.log("Pensionārs");
+}
 }
 
 function atjaunotIetvaru(whitch) {
   document.getElementById("lapas_saturs").innerHTML = '<'+'object id="lapas" type="text/html" data="'+whitch.href+'"></'+'object>';
+}
+
+for (let i = 0; i <=10; i=i+2) {
+  if (i==4 || i==6) {
+  console.log("Cikls ir uz "+i);
+  }
+}
+
+let j = 0;
+while (j <= 10) {
+  console.log("While rezultāts " + j);
+  j++;
+}
+
+let k = 0;
+do {
+  console.log("DO WHILE: " + k)
+  k++;
+} while (k<=10)
+
+let skaitli = [6,3,5,6,78,9,0];
+
+for (let i = 0; i < skaitli.length; i++) {
+  console.log(i + ". vērtība ir: " + skaitli[i]);
+  if (i==2) {
+    console.log("Masīva index nr. " + i);
+  }
+  if (skaitli[i] == 6) {
+    console.log("Masīvā eksistē šāds skaitlis");
+  }else{
+    console.log("Šāda vērtība neeksistē");
+  }
 }
